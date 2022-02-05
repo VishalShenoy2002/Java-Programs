@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class driving_license {
+public class check_dl {
 
     public static void main(String[] args) {
 
