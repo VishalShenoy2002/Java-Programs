@@ -1,3 +1,7 @@
+// Question 10: 
+// Write a Java program to define a class called employee with the name and date of appointment.
+// Create ten employee objects as an array and sort them as per their date of appointment. ie,
+// print them as per their seniority.
 import java.util.Date;
 
 class Employee{
@@ -26,14 +30,15 @@ public class EmpDate {
         emp[7]=new Employee("Asha",new Date(2022,04,22));
         emp[8]=new Employee("Ammu",new Date(2000,01,25));
         emp[9]=new Employee("Gourav",new Date(2002,9,9));
-        System.out.println("List of Emplyees");
+        System.out.println("List of Employees");
         for (int i = 0; i < emp.length; i++) {
             emp[i].display();
 
         }
 
+        System.out.println("List of Employees Seniority wise");
         for (int i = 0; i < emp.length; i++) {
-            for(int j=0;i<emp.length-i-1;j++){
+            for(int j= i+1;j<emp.length;j++){
                 if(emp[i].appdate.after(emp[j].appdate)){
                     Employee t=emp[i];
                     emp[i]=emp[j];
